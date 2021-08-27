@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.developer.recyclermasterjava.model.Email;
+import com.developer.recyclermasterjava.model.Emails;
 
 import java.util.List;
 
@@ -23,6 +24,10 @@ public class EmailAdapter extends RecyclerView.Adapter<EmailAdapter.EmailViewHol
 
     public EmailAdapter(List<Email> emails) {
         this.emails = emails;
+    }
+
+    public List<Email> getEmails() {
+        return emails;
     }
 
     @Override
